@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "蔡佳乐 / Jiale Cai / Carlos"
-  avatar           : "profile.png"
+  avatar           : "profile_cjl.png"
   bio              : "Master in Huazhong University of Science and Technology (HUST)"
   location         : "Wuhan, China"
   employer         :
@@ -109,7 +109,7 @@ author:
   # stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : # "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
