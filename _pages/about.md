@@ -26,7 +26,7 @@ I am broadly interested in computer vision, visual synthesis, medical image anal
 Publication & Manuscripts
 ======
 - Semantic-Guided Weakly Supervised Image Splicing Localization <br>
-**Jiale Cai**, YuTeng Ye, Hang Zhou, Junqing Yu, Wei Yang. <br>
+**Jiale Cai**, Hang Zhou, YuTeng Ye, Junqing Yu, Wei Yang. <br>
 AAAI 2024, IN PREPARATION (all experiments have been completed):
 Submitting to the Association for the Advancement of Artificial Intelligence (AAAI), 2024 <br>
 
