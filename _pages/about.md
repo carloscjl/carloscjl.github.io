@@ -51,9 +51,9 @@ Miscellaneous Experience
 
 Awards: 
 ------
-- Second-class Scholarship for Postgraduates
-- Merit Postgraduate
-- Outstanding graduate
+- Merit Postgraduate of HUST
+- First-class Scholarship for Postgraduates of HUST
+- Outstanding graduate of HUST
 
 Certification:
 ------
