@@ -64,5 +64,5 @@ Certification:
 
 Skills
 ======
-- Codings: Pytorch, Tensorflow, C, C++, Python, SQL, Markdown, HTML
+- Codings: Pytorch, C, C++, Python, SQL, Markdown, HTML
 - Misc.: Academic research, LATEX typesetting and publishing
