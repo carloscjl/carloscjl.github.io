@@ -13,7 +13,7 @@ I was born and raised in [Luoyang](https://baike.baidu.com/item/%E6%B4%9B%E9%98%
 
 Education
 ======
-I am doing my Master's at [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), and affiliated with Creativity, Greatness, Communication, and Love ([DML]((http://media.hust.edu.cn/))) Lab.  I received bachelor's degree in [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/) in 2021. Before that I studied at YanShi senior middle school HeNan province.
+I am doing my Master's at [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/), and affiliated with Creativity, Greatness, Communication, and Love ([DML](http://media.hust.edu.cn/)) Lab.  I received bachelor's degree in [Huazhong University of Science and Technology (HUST)](https://www.hust.edu.cn/) in 2021. Before that I studied at YanShi senior middle school HeNan province.
 
 **I am preparing to apply for a PHD and looking for further studies starting from fall 2024.**
 
