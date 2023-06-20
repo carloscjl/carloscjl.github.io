@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 {% include base_path %}
-I attach my [resume](https://carloscjl.github.io/files/HUST_Jianrong_Lu_Resume.pdf) here.
+I attach my [resume](https://carloscjl.github.io/files/HUST_Jiale_Cai_Resume.pdf) here.
 
 
 
