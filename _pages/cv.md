@@ -8,7 +8,8 @@ redirect_from:
 ---
 
 {% include base_path %}
-
+I attach my [resume](https://carloscjl.github.io/files/HUST_Jianrong_Lu_Resume.pdf) here.
+ <!--
 Education
 ======
 * B.S. in GitHub, GitHub University, 2012
@@ -57,3 +58,4 @@ Teaching
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
+-->
