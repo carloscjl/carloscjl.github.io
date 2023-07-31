@@ -30,6 +30,11 @@ Publication & Manuscripts
 AAAI 2024, IN PREPARATION (all experiments have been completed):
 Submitting to the Association for the Advancement of Artificial Intelligence (AAAI), 2024 <br>
 
+- Temporal Differences and Semantic Guided Patch Diffusion Model for Video Anomaly Detection <br>
+Hang Zhou, **Jiale Cai**, YuTeng Ye, Junqing Yu, Wei Yang. <br>
+AAAI 2024, IN PREPARATION (all experiments have been completed):
+Submitting to the Association for the Advancement of Artificial Intelligence (AAAI), 2024 <br>
+
 
 - Semantics and Relationship-Guided Diffusion Model for Progressive Image Generation <br>
 YuTeng Ye, **Jiale Cai**, Hang Zhou, Junqing Yu, Wei Yang. <br>
@@ -38,13 +43,13 @@ Submitting to the IEEE/CVF Conference on Computer Vision and Pattern Recognition
 
 - Dynamic Feature Pruning and Consolidation for Occluded Person Re-Identification <br>
 YuTeng Ye, Hang Zhou, Junqing Yu, **Jiale Cai**, Chenxing Gao, Youjia Zhang, Junle Wang, Qiang Hu, Wei Yang. <br>
-ICCV 2023, UNDER REVIEW (three "weak accept"):
-IEEE International Conference on Computer Vision (ICCV), 2023 <br>
+TCSVT, IN PREPARATION (all experiments have been completed):
+Submitting to the IEEE Transactions on Circuits and Systems for Video Technology(TCSVT). <br>
 
 - Attacking Transformers with Feature Diversity Adversarial Perturbation <br>
 Chenxing Gao, Hang Zhou, Junqing Yu, YuTeng ye, **Jiale Cai**, Junle Wang, Wei Yang. <br>
-ICCV 2023, UNDER REVIEW (one "borderline",two "weak reject"):
-IEEE International Conference on Computer Vision (ICCV), 2023 <br>
+AAAI 2024, IN PREPARATION (all experiments have been completed):
+Submitting to the Association for the Advancement of Artificial Intelligence (AAAI), 2024 <br>
 
 Miscellaneous Experience
 ======
