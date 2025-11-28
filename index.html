@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiale Cai | PhD Student in Computer Science</title>
+    <meta name="description" content="Jiale Cai is a PhD student in Computer Science at Western University, researching adversarial machine learning and video understanding.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Academicons for academic icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    <style>
+        :root {
+            --color-primary: #1a365d;
+            --color-accent: #2c5282;
+            --color-text: #2d3748;
+            --color-text-light: #4a5568;
+            --color-bg: #faf9f7;
+            --color-bg-alt: #ffffff;
+            --color-border: #e2e8f0;
+            --color-link: #2b6cb0;
+            --color-link-hover: #1a4971;
+            --font-serif: 'Source Serif 4', Georgia, serif;
+            --font-sans: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+            --max-width: 800px;
+            --spacing-unit: 1rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Container */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 calc(var(--spacing-unit) * 1.5);
+        }
+
+        /* Header */
+        header {
+            padding: calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 3);
+            border-bottom: 1px solid var(--color-border);
+            background: var(--color-bg-alt);
+        }
+
+        .header-content {
+            display: flex;
+            gap: calc(var(--spacing-unit) * 2.5);
+            align-items: flex-start;
+        }
+
+        .profile-photo {
+            flex-shrink: 0;
+        }
+
+        .profile-photo img {
+            width: 160px;
+            height: 160px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 3px solid var(--color-border);
+            background: var(--color-border);
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info h1 {
+            font-family: var(--font-serif);
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.02em;
+        }
+
+        .profile-info .chinese-name {
+            font-size: 1.1rem;
+            color: var(--color-text-light);
+            margin-bottom: 0.75rem;
+        }
+
+        .profile-info .title {
+            font-size: 1.05rem;
+            color: var(--color-text-light);
+            margin-bottom: 1rem;
+        }
+
+        .profile-info .affiliation {
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            line-height: 1.6;
+        }
+
+        .profile-info .affiliation a {
+            color: var(--color-link);
+            text-decoration: none;
+        }
+
+        .profile-info .affiliation a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Links */
+        .contact-links {
+            display: flex;
+            gap: 1.25rem;
+            margin-top: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            color: var(--color-text-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .contact-links a:hover {
+            color: var(--color-link);
+        }
+
+        .contact-links svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .contact-links .ai {
+            font-size: 20px;
+            vertical-align: middle;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--color-bg-alt);
+            border-bottom: 1px solid var(--color-border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: calc(var(--spacing-unit) * 2);
+            padding: calc(var(--spacing-unit) * 0.75) 0;
+        }
+
+        nav a {
+            color: var(--color-text-light);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            position: relative;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: var(--color-primary);
+        }
+
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -0.75rem;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--color-accent);
+        }
+
+        /* Main Content */
+        main {
+            padding: calc(var(--spacing-unit) * 3) 0 calc(var(--spacing-unit) * 4);
+        }
+
+        section {
+            margin-bottom: calc(var(--spacing-unit) * 3);
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: calc(var(--spacing-unit) * 1.25);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        p {
+            margin-bottom: var(--spacing-unit);
+        }
+
+        a {
+            color: var(--color-link);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Section */
+        .about-text {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .research-interests {
+            margin-top: var(--spacing-unit);
+        }
+
+        .research-interests strong {
+            color: var(--color-primary);
+        }
+
+        /* News Section */
+        .news-list {
+            list-style: none;
+        }
+
+        .news-list li {
+            display: flex;
+            gap: 1rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .news-list li:last-child {
+            border-bottom: none;
+        }
+
+        .news-date {
+            flex-shrink: 0;
+            width: 90px;
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+            font-weight: 500;
+        }
+
+        .news-content {
+            flex: 1;
+            font-size: 0.95rem;
+        }
+
+        .news-content .highlight {
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+
+        /* Publications Section */
+        .publication {
+            padding: calc(var(--spacing-unit) * 1.25) 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .publication:last-child {
+            border-bottom: none;
+        }
+
+        .pub-title {
+            font-family: var(--font-serif);
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 0.4rem;
+            line-height: 1.5;
+        }
+
+        .pub-title a {
+            color: inherit;
+        }
+
+        .pub-title a:hover {
+            color: var(--color-link);
+            text-decoration: none;
+        }
+
+        .pub-authors {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            margin-bottom: 0.3rem;
+        }
+
+        .pub-authors .me {
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .pub-authors .equal {
+            font-size: 0.8rem;
+            vertical-align: super;
+        }
+
+        .pub-venue {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: var(--color-text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .pub-venue .venue-name {
+            font-weight: 500;
+            color: var(--color-accent);
+        }
+
+        .pub-links {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .pub-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            font-size: 0.8rem;
+            padding: 0.25rem 0.6rem;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            color: var(--color-text-light);
+            transition: all 0.2s ease;
+        }
+
+        .pub-links a:hover {
+            background: var(--color-accent);
+            border-color: var(--color-accent);
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Education Section */
+        .education-item {
+            padding: var(--spacing-unit) 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .edu-degree {
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+
+        .edu-period {
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+        }
+
+        .edu-school {
+            font-size: 0.95rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .edu-details {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+        }
+
+        /* Service Section */
+        .service-list {
+            list-style: none;
+        }
+
+        .service-list li {
+            padding: 0.5rem 0;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .service-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+        }
+
+        /* Awards Section */
+        .award-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .award-item:last-child {
+            border-bottom: none;
+        }
+
+        .award-name {
+            font-size: 0.95rem;
+        }
+
+        .award-year {
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+            flex-shrink: 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: calc(var(--spacing-unit) * 2) 0;
+            border-top: 1px solid var(--color-border);
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+        }
+
+        footer a {
+            color: var(--color-text-light);
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .header-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-info h1 {
+                font-size: 1.75rem;
+            }
+
+            .contact-links {
+                justify-content: center;
+            }
+
+            nav ul {
+                justify-content: center;
+                gap: var(--spacing-unit);
+            }
+
+            .edu-header {
+                flex-direction: column;
+                gap: 0.2rem;
+            }
+
+            .award-item {
+                flex-direction: column;
+                gap: 0.2rem;
+            }
+        }
+
+        /* Animation on load */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header, main section {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        main section:nth-child(2) { animation-delay: 0.1s; }
+        main section:nth-child(3) { animation-delay: 0.2s; }
+        main section:nth-child(4) { animation-delay: 0.3s; }
+        main section:nth-child(5) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-photo">
+                    <!-- Replace with your actual photo -->
+                    <img src="assets/photo.jpg" alt="Jiale Cai" onerror="this.style.background='linear-gradient(135deg, #667eea 0%, #764ba2 100%)'; this.alt='JC';">
+                </div>
+                <div class="profile-info">
+                    <h1>Jiale Cai</h1>
+                    <div class="chinese-name">蔡佳乐</div>
+                    <div class="title">PhD Student in Computer Science</div>
+                    <div class="affiliation">
+                        <a href="https://www.csd.uwo.ca/" target="_blank">Department of Computer Science</a><br>
+                        <a href="https://www.uwo.ca/" target="_blank">Western University</a>, Canada<br>
+                        Advisors: <a href="https://www.csd.uwo.ca/~xling/" target="_blank">Prof. Charles Ling</a> & 
+                        <a href="https://sites.google.com/site/bikiaboruah/" target="_blank">Prof. Boyu Wang</a>
+                    </div>
+                    <div class="contact-links">
+                        <a href="mailto:jcai336@uwo.ca" title="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Email
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" title="Google Scholar">
+                            <i class="ai ai-google-scholar"></i>
+                            Scholar
+                        </a>
+                        <a href="https://github.com/jialecai" target="_blank" title="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="assets/cv.pdf" target="_blank" title="CV">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#service">Service</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <section id="about">
+                <h2>About Me</h2>
+                <div class="about-text">
+                    <p>
+                        I am a PhD student in Computer Science at <a href="https://www.uwo.ca/" target="_blank">Western University</a>, 
+                        advised by <a href="https://www.csd.uwo.ca/~xling/" target="_blank">Prof. Charles Ling</a> and 
+                        <a href="https://sites.google.com/site/bikiaboruah/" target="_blank">Prof. Boyu Wang</a>.
+                    </p>
+                    <p>
+                        Prior to this, I received my Master's degree and Bachelor's degree from 
+                        <a href="https://www.hust.edu.cn/" target="_blank">Huazhong University of Science and Technology (HUST)</a>, 
+                        where I was fortunate to work with <a href="#">Prof. Junqing Yu</a>.
+                    </p>
+                    <div class="research-interests">
+                        <p>
+                            <strong>Research Interests:</strong> My research focuses on adversarial machine learning, 
+                            including unlearnable examples, adversarial perturbations, and their applications in deep learning security. 
+                            I am also interested in video understanding, anomaly detection, and generative models.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="news">
+                <h2>News</h2>
+                <ul class="news-list">
+                    <li>
+                        <span class="news-date">2025.09</span>
+                        <span class="news-content">
+                            One paper on <span class="highlight">Unlearnable Examples</span> accepted to <strong>NeurIPS 2025</strong>!
+                        </span>
+                    </li>
+                    <li>
+                        <span class="news-date">2025.01</span>
+                        <span class="news-content">
+                            Started my PhD journey at <strong>Western University</strong>!
+                        </span>
+                    </li>
+                    <li>
+                        <span class="news-date">2024.12</span>
+                        <span class="news-content">
+                            One paper on <span class="highlight">Video Anomaly Detection</span> accepted to <strong>AAAI 2025</strong>!
+                        </span>
+                    </li>
+                    <li>
+                        <span class="news-date">2024.12</span>
+                        <span class="news-content">
+                            Three papers accepted to <strong>AAAI 2024</strong> on text-to-image diffusion, person re-identification, and adversarial attacks!
+                        </span>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="publications">
+                <h2>Publications</h2>
+                <p style="font-size: 0.9rem; color: var(--color-text-light); margin-bottom: 1rem;">
+                    (* indicates equal contribution)
+                </p>
+
+                <div class="publication">
+                    <div class="pub-title">
+                        <a href="#">Versatile Transferable Unlearnable Example Generator</a>
+                    </div>
+                    <div class="pub-authors">
+                        Zhihao Li<span class="equal">*</span>, <span class="me">Jiale Cai</span><span class="equal">*</span>, 
+                        Gezheng Xu, Hao Zheng, Qiuyue Li, Fan Zhou, Shichun Yang, Charles Ling, Boyu Wang
+                    </div>
+                    <div class="pub-venue">
+                        <span class="venue-name">NeurIPS 2025</span> — Neural Information Processing Systems
+                    </div>
+                    <div class="pub-links">
+                        <a href="#">Paper</a>
+                        <a href="#">Code</a>
+                    </div>
+                </div>
+
+                <div class="publication">
+                    <div class="pub-title">
+                        <a href="#">Video Anomaly Detection with Motion and Appearance Guided Patch Diffusion Model</a>
+                    </div>
+                    <div class="pub-authors">
+                        Hang Zhou, <span class="me">Jiale Cai</span>, Yuteng Ye, Yonghui Feng, Chenxing Gao, Junqing Yu, Zikai Song, Wei Yang
+                    </div>
+                    <div class="pub-venue">
+                        <span class="venue-name">AAAI 2025</span> — Association for the Advancement of Artificial Intelligence
+                    </div>
+                    <div class="pub-links">
+                        <a href="#">Paper</a>
+                        <a href="#">Code</a>
+                    </div>
+                </div>
+
+                <div class="publication">
+                    <div class="pub-title">
+                        <a href="#">Progressive Text-to-Image Diffusion with Soft Latent Direction</a>
+                    </div>
+                    <div class="pub-authors">
+                        Yuteng Ye, <span class="me">Jiale Cai</span>, Hang Zhou, Guanwen Li, Youjia Zhang, Zikai Song, Chenxing Gao, Junqing Yu, Wei Yang
+                    </div>
+                    <div class="pub-venue">
+                        <span class="venue-name">AAAI 2024</span> — Association for the Advancement of Artificial Intelligence
+                    </div>
+                    <div class="pub-links">
+                        <a href="#">Paper</a>
+                        <a href="#">Code</a>
+                    </div>
+                </div>
+
+                <div class="publication">
+                    <div class="pub-title">
+                        <a href="#">Dynamic Feature Pruning and Consolidation for Occluded Person Re-Identification</a>
+                    </div>
+                    <div class="pub-authors">
+                        Yuteng Ye, Hang Zhou, <span class="me">Jiale Cai</span>, Chenxing Gao, Youjia Zhang, Junle Wang, Qiang Hu, Junqing Yu, Wei Yang
+                    </div>
+                    <div class="pub-venue">
+                        <span class="venue-name">AAAI 2024</span> — Association for the Advancement of Artificial Intelligence
+                    </div>
+                    <div class="pub-links">
+                        <a href="#">Paper</a>
+                        <a href="#">Code</a>
+                    </div>
+                </div>
+
+                <div class="publication">
+                    <div class="pub-title">
+                        <a href="#">Attacking Transformers with Feature Diversity Adversarial Perturbation</a>
+                    </div>
+                    <div class="pub-authors">
+                        Chenxing Gao, Hang Zhou, Junqing Yu, Yuteng Ye, <span class="me">Jiale Cai</span>, Junle Wang, Wei Yang
+                    </div>
+                    <div class="pub-venue">
+                        <span class="venue-name">AAAI 2024</span> — Association for the Advancement of Artificial Intelligence
+                    </div>
+                    <div class="pub-links">
+                        <a href="#">Paper</a>
+                        <a href="#">Code</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                
+                <div class="education-item">
+                    <div class="edu-header">
+                        <span class="edu-degree">Ph.D. in Computer Science</span>
+                        <span class="edu-period">Jan 2025 – Present</span>
+                    </div>
+                    <div class="edu-school">Western University, London, Ontario, Canada</div>
+                    <div class="edu-details">Advisors: Prof. Charles Ling & Prof. Boyu Wang</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="edu-header">
+                        <span class="edu-degree">M.S. in Cyber Science and Engineering</span>
+                        <span class="edu-period">Sep 2021 – Jun 2024</span>
+                    </div>
+                    <div class="edu-school">Huazhong University of Science and Technology, Wuhan, China</div>
+                    <div class="edu-details">Advisor: Prof. Junqing Yu</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="edu-header">
+                        <span class="edu-degree">B.E. in Cyber Science and Engineering</span>
+                        <span class="edu-period">Sep 2017 – Jun 2021</span>
+                    </div>
+                    <div class="edu-school">Huazhong University of Science and Technology, Wuhan, China</div>
+                </div>
+            </section>
+
+            <section id="awards">
+                <h2>Awards</h2>
+                <div class="award-item">
+                    <span class="award-name">Merit Postgraduate, Huazhong University of Science and Technology</span>
+                    <span class="award-year">2021</span>
+                </div>
+                <div class="award-item">
+                    <span class="award-name">Outstanding Undergraduate, Huazhong University of Science and Technology</span>
+                    <span class="award-year">2021</span>
+                </div>
+            </section>
+
+            <section id="service">
+                <h2>Academic Service</h2>
+                <ul class="service-list">
+                    <li><strong>Conference Reviewer:</strong> NeurIPS 2025, AAAI 2026</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Jiale Cai · Last updated: November 2025</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="https://github.com/jialecai/jialecai.github.io" target="_blank">Source Code</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll and active nav highlighting
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+                
+                // Update active state
+                document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Update active nav on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
